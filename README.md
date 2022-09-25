@@ -15,23 +15,44 @@ This is a repository for continual learning tutorials and demos running on Jupyt
 - **Avalanche Demo** [notebook](./notebooks/avalanche_demo.ipynb)
 
 ## Requirements: 
-1. Ubuntu 18.04 or newer. You can get a desktop image from https://releases.ubuntu.com/18.04 .
-2. Anaconda. Get the latest version from https://www.anaconda.com/products/distribution
+1. Ubuntu 18.04 or newer. You can get a desktop image from [here](https://releases.ubuntu.com/18.04).
+2. Anaconda. Get the latest version from [here](https://www.anaconda.com/products/distribution).
 
 ## How to run it
 
 ### Locally on your machine
-1. Assuming you are already using Ubuntu and have installed Anaconda. From the command prompt (Ctrl-Alt-T), create a new Python environment by typing 
+1. Assuming you are already using Ubuntu and have installed Anaconda. From the command prompt (Ctrl-Alt-T), create a new Python 3.7 environment called "py37" and pre-install a few necessary softwares by typing: 
+```
+conda create -n py37 python=3.7 anaconda --y
+```
+Wait for the installation to finish.
 
-### Colab
-1. Go to [Google Colab](https://colab.research.google.com) and sign in!
+2. Activate the newly-installed environment and install the Avalanche toolbox by typing
+```
+conda activate py37
+pip install avalanche-lib==0.2.0
+```
 
-2. Go to the "*GitHub*" tab and type "*continualai*"
+3. Clone this repository by typing
+```
+git clone https://github.com/UMContinualLearning/Continual_learning_examples.git
+```
+The repository should have been downloaded into your computer in the folder named "Continual_learning_examples".
+If you encountered an error regarding "git", make sure you have installed it by typing "pip install git".
 
-3. Pick a notebook an run it! :-)
+4. To run a notebook locally on your machine, you need to use Jupyter Notebook which has already been installed in Step 1. Run it in your browser by typing
+```
+jupyter-notebook
+```
 
-## How to contribute
+5. Navigate to the folder "Continual_learning_examples/notebooks/" and pick any notebook to run. 
 
-We have a detailed account of the contribution procedure and guidelines in the corresponding file: [CONTRIBUTING](CONTRIBUTING.md)
 
-You can also join our community on Slack for discussions: [ContinualAI Slack](https://continualai.herokuapp.com/)
+### Running on Google Colab
+There are several advantages to running on Colab, such as availability of better computing resources including GPU support.
+
+1. Sign in to [Google Colab](https://colab.research.google.com).
+
+2. Go to the "*GitHub*" tab and type "*UMContinualLearning*"
+
+3. Pick a notebook an run it.
