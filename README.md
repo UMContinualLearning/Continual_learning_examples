@@ -1,10 +1,4 @@
-# ContinualAI - Colab 
-<img src="https://continualai.herokuapp.com/badge.svg">
-
-**ContinualAI** is an open research community on the topic of Continual Learning and AI! :-)
-We are building an open-source, collaborative wiki at [continualai.org](https://continualai.org) as well as creating a community of CL enthusiasts! Join us today **[on slack](https://continualai.herokuapp.com)**! :D
-
-**ContinualAI - Colab** is a repository meant for tutorials and demo running on Google Colaboratory. The central idea is to collaboratively create a number of notebooks and scripts (for demo, showcasing & tutorials) which can be directly imported in Google Colab and are related to Continual Learning. Now, spread the power of Continual Learning! :-)
+This is a repository for continual learning tutorials and demos running on Jupyter Notebook and Google Colaboratory. The central idea is to collaboratively create notebooks and scripts which can be directly imported in Google Colab and are related to Continual Learning. 
 
 ---
 
@@ -20,7 +14,14 @@ We are building an open-source, collaborative wiki at [continualai.org](https://
 - **Forgetting with one neuron** [notebook](./notebooks/forgetting_with_one_neuron.ipynb)
 - **Avalanche Demo** [notebook](./notebooks/avalanche_demo.ipynb)
 
+## Requirements: 
+1. Ubuntu 18.04 or newer. You can get a desktop image from https://releases.ubuntu.com/18.04 .
+2. Anaconda. Get the latest version from https://www.anaconda.com/products/distribution
+
 ## How to run it
+
+### Locally on your machine
+1. Assuming you are already using Ubuntu and have installed Anaconda. From the command prompt (Ctrl-Alt-T), create a new Python environment by typing 
 
 ### Colab
 1. Go to [Google Colab](https://colab.research.google.com) and sign in!
